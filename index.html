@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2DO List - Vanilla JS</title>
+
+    <link rel="stylesheet" href="https://cdn.synchro.com.br/assets/fontawesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdn.synchro.com.br/assets/saturn-v/beta-3/saturn-v.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+    <h1>2DO List</h1>
+    <form class="sv-form">
+      <div class="sv-row">
+        <div class="sv-column _80">
+          <input type="text" id="task" name="task" value="">
+        </div>
+        <div class="sv-column _20" style="margin-left: -10px">
+          <input class="sv-button default" type="button" name="add" value="add" onclick=app().addTask()>
+        </div>
+      </div>
+      <div class="sv-row">
+        <ul id="taskList"></ul>
+      </div>
+    </form>
+    <script src="js/src/app.js" charset="utf-8"></script>
+  </body>
+</html>
